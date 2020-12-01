@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendChallenge.Tests", "BackendChallenge\BackendChallenge.Tests.csproj", "{B9A08C80-AC16-4AF3-96A4-46F3EAD3D059}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7B44709-2641-4579-BDB4-FBC899C27E93} = {C7B44709-2641-4579-BDB4-FBC899C27E93}
+		{95B821B6-1E18-464B-80F6-58133C3D2C34} = {95B821B6-1E18-464B-80F6-58133C3D2C34}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendChallenge.Services", "BackEndChallenge.Services\BackendChallenge.Services.csproj", "{C7B44709-2641-4579-BDB4-FBC899C27E93}"
+	ProjectSection(ProjectDependencies) = postProject
+		{95B821B6-1E18-464B-80F6-58133C3D2C34} = {95B821B6-1E18-464B-80F6-58133C3D2C34}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendChallenge.Core", "BackendChallenge.Core\BackendChallenge.Core.csproj", "{95B821B6-1E18-464B-80F6-58133C3D2C34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendChallenge.Graphql", "BackendChallenge.Graphql\BackendChallenge.Graphql.csproj", "{11F1659B-3360-4250-BE55-C6BAF12A0ED8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7B44709-2641-4579-BDB4-FBC899C27E93} = {C7B44709-2641-4579-BDB4-FBC899C27E93}
+		{6461FB41-BF86-4BA0-8B06-A7B54B17062D} = {6461FB41-BF86-4BA0-8B06-A7B54B17062D}
+		{95B821B6-1E18-464B-80F6-58133C3D2C34} = {95B821B6-1E18-464B-80F6-58133C3D2C34}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendChallenge.Dal", "BackendChallenge.Dal\BackendChallenge.Dal.csproj", "{6461FB41-BF86-4BA0-8B06-A7B54B17062D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{95B821B6-1E18-464B-80F6-58133C3D2C34} = {95B821B6-1E18-464B-80F6-58133C3D2C34}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A08C80-AC16-4AF3-96A4-46F3EAD3D059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A08C80-AC16-4AF3-96A4-46F3EAD3D059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A08C80-AC16-4AF3-96A4-46F3EAD3D059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A08C80-AC16-4AF3-96A4-46F3EAD3D059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7B44709-2641-4579-BDB4-FBC899C27E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B44709-2641-4579-BDB4-FBC899C27E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B44709-2641-4579-BDB4-FBC899C27E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B44709-2641-4579-BDB4-FBC899C27E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B821B6-1E18-464B-80F6-58133C3D2C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B821B6-1E18-464B-80F6-58133C3D2C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B821B6-1E18-464B-80F6-58133C3D2C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B821B6-1E18-464B-80F6-58133C3D2C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11F1659B-3360-4250-BE55-C6BAF12A0ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F1659B-3360-4250-BE55-C6BAF12A0ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F1659B-3360-4250-BE55-C6BAF12A0ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F1659B-3360-4250-BE55-C6BAF12A0ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6461FB41-BF86-4BA0-8B06-A7B54B17062D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6461FB41-BF86-4BA0-8B06-A7B54B17062D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6461FB41-BF86-4BA0-8B06-A7B54B17062D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6461FB41-BF86-4BA0-8B06-A7B54B17062D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90BE025A-A623-4A12-9DD5-8E440EE1430D}
+	EndGlobalSection
+EndGlobal
